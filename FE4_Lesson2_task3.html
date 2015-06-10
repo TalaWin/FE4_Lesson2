@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<title>Формы_task3</title>
+	</head>
+	<body>
+		 <form> 
+			<h3>Name</h3>
+				<label> sfsdfsdfsdfsd
+				<input type="text" name="name" size="10" autofocus maxlength="10">
+				</label>
+			<p>Email<br>
+				<input type="text" name="email" size="10" autofocus maxlength="10">
+			</p>
+			<p>Sex<br>
+				<label><input type="radio" name="sex" value="man" checked>Male</label>
+				<label><input type="radio" name="sex" value="woman" checked>Female</label>
+			</p>
+			<p>Current status<br>
+				<input type="checkbox" name="Current status" value="Student" checked>Student
+				<input type="checkbox" name="Current status" value="Employed" checked>Employed
+				<input type="checkbox" name="Current status" value="Unemployed" checked>Unemployed
+			</p>
+			<p>Month and Year of birth<br>
+			<input type="date" name="calendar">
+			</p>
+			
+			<div id="bodycalendar">
+			 <div id="center">
+			  <div id="c" style="display: block;">
+			   <div id="c">
+		        <table cellspacing="2" cellpadding="2" class="calendar_table">
+		         <tbody>
+				  <tr>
+			       <td colspan="7">
+				  </tr>
+				  <form id="ajax-calendar" method="get" action="/calendar/calendar.php">
+				   <select name="m" style="width:85">
+					   <option value="1">Январь</option>
+					   <option value="2">Февраль</option>
+					   <option value="3">Март</option>
+					   <option value="4">Апрель</option>
+					   <option value="5">Май</option>
+					   <option value="6">Июнь</option>
+					   <option value="7">Июль</option>
+					   <option value="8">Август</option>
+					   <option value="9">Сентябрь</option>
+					   <option value="10">Октябрь</option>
+					   <option value="11">Ноябрь</option>
+					   <option value="12">Декабрь</option>
+				   </select> 
+				   <select name="y" style="width:53">
+					   <option value="2013">2002</option>
+					   <option value="2013">2003</option>
+					   <option value="2013">2004</option>
+					   <option value="2013">2005</option>
+					   <option value="2013">2006</option>
+					   <option value="2013">2007</option>
+					   <option value="2013">2008</option>
+					   <option value="2013">2009</option>
+					   <option value="2013">2010</option>
+					   <option value="2013">2011</option>
+					   <option value="2013">2012</option>
+					   <option value="2013">2013</option>
+					   <option value="2014">2014</option>
+					   <option value="2015" selected="">2015</option>
+				   </select>
+			<input type="hidden" name="d" value="10">
+			<input type="hidden" name="name" value="">
+			<input value="»" type="submit" id="knopka">
+				 </form>
+					 </td>
+				 </tr>
+				 </tbody>
+			   </table>
+			 </div>				
+				
+			<p>Skills and Technologies<br>
+			<form action="handler.php">
+			   <p><select>
+			   <optgroup label="Коммуникативность">
+				<option value="c1">блаблаблаблабла</option>
+				<option value="c2">пипипипипипи</option>
+				<option value="c3">мимимимимимим</option>
+			   </optgroup>
+			   <optgroup label="Креативность">
+				<option value="s1">блаблаблаблабла</option>
+				<option value="s2">пипипипипипи</option>
+				<option value="s3">мимимимимимим</option>
+			   </optgroup>
+			   <optgroup label="Вдумчивость">
+				<option value="k1">блаблаблаблабла</option>
+				<option value="k2">пипипипипипи</option>
+				<option value="k3">мимимимимимим</option>
+			   </optgroup>
+			   </select></p>
+			   
+			
+			<form enctype="multipart/form-data" method="post">
+			   <p>Photo</br>
+			   <input type="file" name="photo" multiple accept="image/*,image/jpeg"><br>
+			   <input type="submit" value="Save">
+			 </form>
+			   
+			   
+			   
+			   	
+				
+		
+
+		</body>
+	</head>
+</html>
