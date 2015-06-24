@@ -1,0 +1,44 @@
+nav ul{
+	background: #EEE9E9;
+	width: 900px;
+	padding: 10px;
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	float: left;	
+}
+	nav ul li{
+		background: #48BFE5;
+		width: 900px;		
+		padding:10px;
+		position: relative;	
+		display: block;
+		float: left;
+		align: top;
+	}
+	nav ul li:hover{
+		  background: #EEE9E9;
+		  display: none;
+	}
+	nav ul li a{
+		color: #FFFFFF;	
+		text-transform:uppercase;
+		text-align: center;
+		text-decoration: none;
+		font-family: impact;
+		padding: 10px;
+		display: inline-block;
+	}
+	nav ul li a:hover{
+		color: grey;
+		text-transform:uppercase;		
+		text-align: center;
+		text-decoration: none;
+		font-family: impact;
+		padding: 10px;
+	}
+		nav ul ul{
+			display: none;
+			/*background:#EEE9E9*/
+		}
+		
